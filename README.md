@@ -53,7 +53,7 @@ After=syslog.target network.target
 [Service]
 User=ovfiets-api
 WorkingDirectory=/opt/ovfiets-api/
-ExecStart=/opt/ovfiets-api/api-daemon.py
+ExecStart=/usr/bin/python /opt/ovfiets-api/api-daemon.py conf/daemon.json
 
 [Install]
 WantedBy=multi-user.target
