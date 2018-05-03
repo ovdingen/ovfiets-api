@@ -1,4 +1,3 @@
 bottle
 zmq
 argparse
-zlib
