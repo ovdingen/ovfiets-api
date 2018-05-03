@@ -41,7 +41,9 @@ $ `mkdir $CLONE_DIR && chown $USER_NAME:$USER_NAME $clone_dir && sudo -u $USER_N
 
 # `pip install gunicorn`
 
-6) Create a unit file for the data gatherer. Here is a example:
+6) Copy `data/db.sqlite.dist` to `data/db.sqlite`.
+
+7) Create a unit file for the data gatherer. Here is a example:
 
 ```
 [Unit]
@@ -57,7 +59,7 @@ ExecStart=/opt/ovfiets-api/api-daemon.py
 WantedBy=multi-user.target
 ```
 
-7) Create a unit file for Gunicorn. Here is a example:
+8) Create a unit file for Gunicorn. Here is a example:
 
 ```
 [Unit]
