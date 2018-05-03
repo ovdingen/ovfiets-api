@@ -1,5 +1,4 @@
 bottle
 zmq
 argparse
-json
 zlib
